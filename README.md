@@ -63,7 +63,7 @@ main();
 
 ## Built With
 
-- [WS](https://www.npmjs.com/package/ws) - WebSocket Module For Node.js
+- [ws](https://www.npmjs.com/package/ws) - WebSocket Module For Node.js
 
 ## Versioning
 
@@ -79,6 +79,6 @@ See also the list of [contributors](https://github.com/bermanboris/bitfinex-node
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## NOT IMPLEMENTED YET
+## Not Implemented Yet
 
 - Public channel other than Ticker
