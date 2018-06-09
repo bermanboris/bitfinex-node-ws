@@ -4,7 +4,7 @@ import {
   EventType,
   Ticker,
   SubscribeResponse
-} from "./types";
+} from "../types";
 
 export function isHeartbeat(msg: Message): msg is Heartbeat {
   return Array.isArray(msg) && msg[1] === "hb";

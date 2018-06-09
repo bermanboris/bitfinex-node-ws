@@ -3,7 +3,7 @@
   "author": "Boris Berman",
   "description": "Bitfinex Node.js Library (for WebSocket Public Channels)",
   "main": "./lib/index.js",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "types": "./lib/index.d.ts",
   "typings": "./lib/index.d.ts",
