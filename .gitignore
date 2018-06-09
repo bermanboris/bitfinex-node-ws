@@ -1,0 +1,12 @@
+.idea
+.vscode
+lib
+coverage
+node_modules
+build
+tmp
+temp
+db
+bin
+.DS_Store
+package-lock.json
