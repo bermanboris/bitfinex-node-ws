@@ -1,5 +1,7 @@
 # Bitfinex Node.js Library (for WebSocket Public Channels)
 
+![Code Autocompletion](/docs/intellisense.png?raw=true "Code Autocompletion")
+
 Written in TypeScript, has type annotations, messages normalization to JSON, error handling, and more.
 
 ## Getting Started
@@ -88,6 +90,40 @@ bfx.connect().then(() => {
   });
 });
 ```
+
+## API
+
+To get data from Bitfinex API via WS, first you need to initiate connection. You can do that by calling .connect() method on the Bitfinex instance. This connect() method returns a promise, that will resolve when connection is initiated. In case connection that cannot be established for some reason, promise will be rejected, and error will be logged to the console.
+
+Example Usage:
+
+```js
+const btx = new Bitfinex();
+
+bfx
+  .connect()
+  .then(() => /* connection established */)
+  .catch((err) => /* error has occured */)
+```
+
+Or using async/await:
+
+```js
+const btx = new Bitfinex();
+
+async function main() {
+  try {
+    await bfx.connect();
+    // connection has established succesfully
+  } catch (err) {
+    // error has occured
+  }
+}
+
+main();
+```
+
+After establishing the connection, you can
 
 ## Built With
 

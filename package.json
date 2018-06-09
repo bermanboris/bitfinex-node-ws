@@ -3,7 +3,7 @@
   "author": "Boris Berman",
   "description": "Bitfinex Node.js Library (for WebSocket Public Channels)",
   "main": "./lib/index.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "types": "./lib/index.d.ts",
   "typings": "./lib/index.d.ts",
@@ -19,6 +19,14 @@
   "dependencies": {
     "ws": "^5.2.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bermanboris/bitfinex-node-ws.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bermanboris/bitfinex-node-ws/issues"
+  },
+  "homepage": "https://github.com/bermanboris/bitfinex-node-ws#readme",
   "devDependencies": {
     "@types/node": "10.1.2",
     "@types/ws": "^5.1.1",
