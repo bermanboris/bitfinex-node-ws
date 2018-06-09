@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Node.js 8+
+Node.js
 ```
 
 ### Installing
@@ -32,7 +32,7 @@ yarn add bitfinex-node-ws
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Usage using ES6 modules
+## Usage using ES6 modules (with async/await)
 
 ```js
 import Bitfinex from "bitfinex-node-ws";
@@ -41,6 +41,7 @@ const bfx = new Bitfinex();
 
 async function main() {
   await bfx.connect();
+
   bfx.ticker("tBTCUSD", message => {
     console.log(message);
     /*
@@ -63,7 +64,7 @@ async function main() {
 main();
 ```
 
-# Usage via CommonJS modules
+# Usage via CommonJS modules (without async/await)
 
 ```js
 const { Bitfinex } = require("bitfinex-node-ws");
@@ -123,7 +124,7 @@ async function main() {
 main();
 ```
 
-After establishing the connection, you can
+After establishing the connection, you can use ticker() method on the bfx object to get tickers in real time. ticker() method accepts 2 parameters (symbol and callback function that will be executed, when new ticker message will arrive).
 
 ## Built With
 
