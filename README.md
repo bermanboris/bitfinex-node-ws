@@ -32,14 +32,14 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Usage
 
-```
-import Bitfinex from 'bitfinex-node-ws';
+```js
+import Bitfinex from "bitfinex-node-ws";
 
 const bfx = new Bitfinex();
 
 async function main() {
   await bfx.connect();
-  bfx.ticker("tBTCUSD", (message) => {
+  bfx.ticker("tBTCUSD", message => {
     console.log(message);
     /*
       {
@@ -55,10 +55,10 @@ async function main() {
         low: 7550
       }
     */
-  })
+  });
 }
 
-main()
+main();
 ```
 
 ## Built With
