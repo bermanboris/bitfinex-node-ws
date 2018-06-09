@@ -1,6 +1,6 @@
 # Bitfinex Node.js Library (for WebSocket Public Channels)
 
-![Code Autocompletion](/docs/intellisense.png?raw=true "Code Autocompletion")
+![Code Autocompletion](docs/intellisense.png?raw=true "Code Autocompletion")
 
 Written in TypeScript, has type annotations, messages normalization to JSON, error handling, and more.
 
