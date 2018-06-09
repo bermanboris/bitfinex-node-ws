@@ -42,18 +42,18 @@ async function main() {
   bfx.ticker("tBTCUSD", message => {
     console.log(message);
     /*
-      {
-        bid: 7594.2,
-        bidSize: 43.50522943,
-        ask: 7594.3,
-        askSize: 66.06033297,
-        dailyChange: 5.8,
-        dailyChangePerc: 0.0008,
-        lastPrice: 7594.2,
-        volume: 8234.07956528,
-        high: 7685,
-        low: 7550
-      }
+    {
+      bid: 7594.2,
+      bidSize: 43.50522943,
+      ask: 7594.3,
+      askSize: 66.06033297,
+      dailyChange: 5.8,
+      dailyChangePerc: 0.0008,
+      lastPrice: 7594.2,
+      volume: 8234.07956528,
+      high: 7685,
+      low: 7550
+     }
     */
   });
 }
