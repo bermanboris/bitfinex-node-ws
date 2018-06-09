@@ -99,7 +99,7 @@ To get data from Bitfinex API via WS, first you need to initiate connection. You
 Example Usage:
 
 ```js
-const btx = new Bitfinex();
+const bfx = new Bitfinex();
 
 bfx
   .connect()
@@ -110,7 +110,7 @@ bfx
 Or using async/await:
 
 ```js
-const btx = new Bitfinex();
+const bfx = new Bitfinex();
 
 async function main() {
   try {
@@ -125,6 +125,14 @@ main();
 ```
 
 After establishing the connection, you can use ticker() method on the bfx object to get tickers in real time. ticker() method accepts 2 parameters (symbol and callback function that will be executed, when new ticker message will arrive).
+
+```js
+bfx.ticker("tBTCUSD", message => {
+  console.log(message);
+});
+```
+
+Since this library is written using TypeScript and has Type Definitions, you will have autocomplete on the message object. It will show you available fields, and their description (you can see this behavior at the screenshot above).
 
 ## Built With
 
