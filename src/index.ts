@@ -85,6 +85,10 @@ class Bitfinex {
   }
 
   public ticker(symbol: string, callback: Ticker.SubscriptionFn) {
+    if (!this.isConnected) {
+      throw new Error("Not connected to Bitfinex server.");
+    }
+
     this.listeners["ticker"].push(callback);
 
     const request: SubscribeRequest = {
@@ -114,4 +118,4 @@ class Bitfinex {
   }
 }
 
-export default Bitfinex;
+export { Bitfinex };
